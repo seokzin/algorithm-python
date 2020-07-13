@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="584213f7-bbf6-4c4e-b6ff-4d2c8e9d78f9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Grammar/6, String.py" beforeDir="false" afterPath="$PROJECT_DIR$/Grammar/6, String.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Grammar/7. List_Tuple.py" beforeDir="false" afterPath="$PROJECT_DIR$/Grammar/7. List_Tuple.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,25 +26,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Python.7. List_Tuple">
-    <configuration name="10. Condition" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Algorithm_Python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Grammar" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\git\Algorithm_Python\Grammar\10. Condition.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.5. 3이 나타나는 시간을 전부 합하면">
     <configuration name="11. Loop" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algorithm_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -64,19 +45,16 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="3. Variable" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="2. 탭을 공백 문자로 바꾸기" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algorithm_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Grammar" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Code/Codingdojang" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Grammar/3. Variable.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Code/Codingdojang/2. 탭을 공백 문자로 바꾸기.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -85,19 +63,16 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="4. Print" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="3. 게시판 페이징" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algorithm_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Grammar" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Code/Codingdojang" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Grammar/4. Print.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Code/Codingdojang/3. 게시판 페이징.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -106,16 +81,34 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="7. List_Tuple" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="4. Special Sort" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algorithm_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Grammar" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Code/Codingdojang" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Grammar/7. List_Tuple.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Code/Codingdojang/4. Special Sort.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="5. 3이 나타나는 시간을 전부 합하면" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Algorithm_Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Code/Codingdojang" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Code/Codingdojang/5. 3이 나타나는 시간을 전부 합하면.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -126,11 +119,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.7. List_Tuple" />
-        <item itemvalue="Python.11. Loop" />
-        <item itemvalue="Python.11. Loop" />
-        <item itemvalue="Python.11. Loop" />
-        <item itemvalue="Python.10. Condition" />
+        <item itemvalue="Python.5. 3이 나타나는 시간을 전부 합하면" />
+        <item itemvalue="Python.4. Special Sort" />
+        <item itemvalue="Python.3. 게시판 페이징" />
+        <item itemvalue="Python.2. 탭을 공백 문자로 바꾸기" />
+        <item itemvalue="Python.2. 탭을 공백 문자로 바꾸기" />
       </list>
     </recent_temporary>
   </component>
@@ -152,5 +145,37 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="716" y="149" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1594548427412" />
+    <state width="639" height="204" key="GridCell.Tab.0.bottom" timestamp="1594654848925">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="639" height="204" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1594654848925" />
+    <state width="639" height="204" key="GridCell.Tab.0.center" timestamp="1594654848925">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="639" height="204" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1594654848925" />
+    <state width="639" height="204" key="GridCell.Tab.0.left" timestamp="1594654848925">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="639" height="204" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1594654848925" />
+    <state width="639" height="204" key="GridCell.Tab.0.right" timestamp="1594654848925">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="639" height="204" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1594654848925" />
+    <state width="639" height="204" key="GridCell.Tab.1.bottom" timestamp="1594654848926">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="639" height="204" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1594654848926" />
+    <state width="639" height="204" key="GridCell.Tab.1.center" timestamp="1594654848925">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="639" height="204" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1594654848925" />
+    <state width="639" height="204" key="GridCell.Tab.1.left" timestamp="1594654848925">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="639" height="204" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1594654848925" />
+    <state width="639" height="204" key="GridCell.Tab.1.right" timestamp="1594654848925">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="639" height="204" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1594654848925" />
   </component>
 </project>

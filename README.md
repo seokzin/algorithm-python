@@ -12,6 +12,7 @@
 #### IDE
 - PyCharm 2020.1
     - 코드 작성
+    
 - Git Bash
     - Git 관리
     
