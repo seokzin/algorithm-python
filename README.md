@@ -1,28 +1,29 @@
 # Algorithm_Python
-Python Algorithm Solutions
+파이썬 문법 및 알고리즘 문제풀이 코드 정리
 
-구성
+#### Directory
 1. Grammar
-파이썬 문법 정리
+    - 파이썬 문법 정리
+    - Unit 26. Set 까지 정리. 이후 필요에 따라 추가 예정 
 
 2. Code
-파이썬 알고리즘 풀이 코드 정리
-
-#### 유튜브 강의
-(재즐포브) 코딩 도장 깨기 프로젝트 
-https://www.youtube.com/watch?v=dKLAZJwKEHU&list=PLnIaYcDMsScyRzDzAS3UGrhZ46VZoxFLg
+    - 파이썬 알고리즘 풀이 코드 정리
 
 #### IDE
 - PyCharm 2020.1
+    - 코드 작성
+- Git Bash
+    - Git 관리
+    
+#### Reference
+1. 파이썬 코딩 도장  
+    - 문법 정리
+    - https://dojang.io/course/view.php?id=7
 
-#### 사이트
-1. 파이썬 코딩도장
-https://dojang.io/mod/page/view.php?id=2156  
-문법공부용
+2. (Youtube) 코딩 도장 깨기 프로젝트  
+    - 알고리즘 강의 참고용
+    - https://www.youtube.com/watch?v=dKLAZJwKEHU&list=PLnIaYcDMsScyRzDzAS3UGrhZ46VZoxFLg
 
-2. 코딩도장
-http://codingdojang.com/  
-재즐포브 유튜브 알고리즘 풀이용
-
-2. 프로그래머스 https://programmers.co.kr/learn/challenges  
-스터디용
+3. Programmers   
+    - 스터디 문제 풀이
+    - https://programmers.co.kr/learn/challenges  
