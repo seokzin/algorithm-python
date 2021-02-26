@@ -12,16 +12,18 @@ move_types = ['L', 'R', 'U', 'D']
 
 for plan in plans:
   for i in range(len(move_types)):
-    if plan == move_types[i]:
+    if plan == move_types[i]: # plan이 어떤 무브타입인지 체크해주는 장치
       nx = x + dx[i]
       ny = y + dy[i]
   
   if nx < 1 or ny < 1 or nx > n or ny > n:
     continue
   
-  x, y = nx, ny
+  x, y = nx, ny # 벗어나지 않았다면 적용하기
 
 print(x, y)
 
 # 행렬상에서 dy가 가로가 된다..
-# 어렵다. 왜 위치 벗어남 확인이 19라인에 있으며 15줄 if문의 의미는 무엇인가?
+# 어렵다. 15라인, 19라인의 위치와 의미를 다시금 복기하기
+# 15 - plan의 알파벳과 방향벡터를 매칭
+# 19 - 이동해보고 범위 벗어난지 체크 후 반영
