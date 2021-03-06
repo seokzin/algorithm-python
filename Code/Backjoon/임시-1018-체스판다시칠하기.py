@@ -13,5 +13,6 @@ cnt = 0 # 틀린 무늬 카운트
 def compare(arr, x, y): 
   for i in range(x, x+8):
     if arr[(i%2 == 1)] == 'W':
+      continue
 
 # 1920번 어렵네. 나중에 다시 풀자
