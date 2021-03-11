@@ -1,19 +1,19 @@
-# 1463 - 3으로 나누는게 최적을 보장하지 않는다. ex) 10
+dic={}
 
-n = int(input())
+for i in range(int(read())):
+    dic[i+1] = set()
+for j in range(int(read())):
+    a, b = map(int,read().split())
+    dic[a].add(b)
+    dic[b].add(a)
 
-cnt = 0
+def dfs(start, dic):
+    for i in dic[start]:
+        if i not in visited:
+            visited.append(i)
+            dfs(i, dic)
+visited = []
+dfs(1, dic)
+print(len(visited)-1)
 
-while n > 1:
-  if n % 3 == 0:
-    n = n//3
-    cnt += 1
-  elif n % 2 == 0:
-    n = n//2
-    cnt += 1
-  else:
-    n = n-1
-    cnt += 1
-
-print(cnt)
-
+# bfs가 더 효율적이라는데 어떻게 구분해.?
