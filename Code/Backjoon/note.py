@@ -1,8 +1,9 @@
-a, b, c = map(int, input().split())
+# 전형적인 DFS 문제
 
-# 1000 + 70x < 170x  a/(c-b) < x 되는 순간 탈출
-if b >= c:
-  print(-1)
+t = int(input())
 
-else:
-  print(a//(c-b) + 1)
+for _ in range(t):
+  m, n, k = map(int, input().split())
+
+  arr = 
+  for _ in range(k):

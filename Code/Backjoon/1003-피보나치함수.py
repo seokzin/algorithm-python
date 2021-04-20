@@ -1,11 +1,9 @@
-import sys
-
 n = int(input())
 
-zero = [1, 0, 1] # fibo(0) 호출 횟수 arr
-one = [0, 1, 1] # fibo(1) 호출 횟수 arr
+zero = [1, 0]
+one = [0, 1]
 
-for i in range(3, 41):
+for i in range(2, 41):
   zero.append(zero[i-1] + zero[i-2])
   one.append(one[i-1] + one[i-2])
 
