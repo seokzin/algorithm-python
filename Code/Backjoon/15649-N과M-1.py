@@ -9,11 +9,8 @@ def dfs():
   for i in range(1, n+1):
     if i not in s:
       s.append(i)
-      # print('일', s)
       dfs()
-      # print('이', s)
       s.pop()
-      # print('삼', s)
 
 dfs()
 

@@ -15,4 +15,4 @@ def dfs(start):
 dfs(1)
 
 # 15649와 비슷하니 묶어서 생각
-# not in은 if visited와 비슷한 기능하는 괜찮은 문법인듯. 다만 여기선 안써도 결과 같음
+# not in은 if visited와 비슷한 기능. 다만 중복 값은 동일 취급되는 단점이 있다.
