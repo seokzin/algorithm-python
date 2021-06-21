@@ -1,26 +1,24 @@
 n, m = map(int, input().split())
+a = []
+res = 64 # 색칠할 최소값 - 64(최대값)으로 초기화
 
-arr = []
+for _ in range(n):
+  board = input()
+  a.append(board)
 
-result = 64 # 색칠할 최소값 64로 초기화
-
-for i in range(n):
-  arr.append(input())
-
-for i in range(n-7):
-  for j in range(m-7):
+for i in range(n-7): # 시작 y좌표
+  for j in range(m-7): # 시작 x좌표
     cnt = 0
+    
+    # 시작 좌표로부터 8*8 칸 탐색
     for y in range(i, i + 8):
       for x in range(j, j + 8):
-        if (y+x) % 2 == 0: # 2중 리스트의 체크무늬끼리는 인덱스 합의 홀짝이 같다.
-          if arr[y][x] == 'B': 
-            cnt += 1
-        else: # (y+2) % 2 == 1
-          if arr[y][x] == 'W':
-            cnt += 1
+        # A 그룹이며 검정색 + B 그룹이며 흰색
+        if ((y+x) % 2 == 0 and a[y][x] == 'B') or ((y+x) % 2 == 1 and a[y][x] == 'W'): 
+          cnt += 1
         
-    result = min(result, cnt, 64-cnt) # BWBW 체스판과 WBWB 체스판은 합이 64인 관계다. 따로 구할 필요가 없다.
+    # W판은 B판과 반전 관계니 64-cnt 하면 된다. 따로 구할 필요 X
+    # (이전 최소값, B판 필요 cnt, W판 필요 cnt) 중 최소값으로 갱신
+    res = min(res, cnt, 64-cnt)
     
-print(result)
-
-# 15-16) if문을 한줄로 합치면 어떤 문제가 생길까?
+print(res)
