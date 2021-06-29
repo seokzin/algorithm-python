@@ -1,26 +1,20 @@
 n = int(input())
+arr = list(map(int, input().split()))
+ans = []
+l, r = 0, n-1
 
-dp = [[0, []] for _ in range(n + 1)] #[최솟값, 경로 리스트]
-dp[1] = [0, [1]]
+while l < r:
+  v = arr[l] + arr[r]
 
-for i in range(2, n+1):
-  # (x-1)
-  dp[i][0] = dp[i-1][0] + 1
-  dp[i][1] = dp[i-1][1] + [i]
-  
-  # (x//3   
-  if i % 3 == 0 and dp[i//3][0] + 1 < dp[i][0]:
-    dp[i][0] = dp[i//3][0] + 1
-    dp[i][1] = dp[i//3][1] + [i]
+  if abs(mix) < ans[0]:
+    ans[0] = abs(mix)
+    ans[1] = (liq[l],liq[r])
+  if mix > 0:
+    r-=1
+  elif mix < 0:
+    l += 1
+  else:
+    return ans[1]
+return ans[1]
 
-#f x//2 
-  if i % 2 == 0 and dp[i//2][0] + 1 < dp[i][0]:
-    dp[i][0] = dp[i//2][0] + 1
-    dp[i][1] = dp[i//2][1] + [i]
-        
-print(dp[n][0])
-
-for i in dp[n][1][::-1]: # 뒤집어 출력
-  print(i, end=' ')
-
-# 내 방식으로 다시 가꾸기
+print(*ans)
