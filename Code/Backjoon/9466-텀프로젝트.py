@@ -1,5 +1,5 @@
 import sys
-sys.setrecursionlimit(10**5)
+sys.setrecursionlimit(10**6)
 
 def dfs(x):
   global res
@@ -32,3 +32,4 @@ for _ in range(t):
 
 # 순열 사이클 + 마지막 노드는 첫 노드를 가리켜야 함
 # 코드 이해는 되는데 직접 구현은 힘들겠다. 사이클 공부
+# 재귀에러? 10**5 도 모자른건가.. 10**6으로 클리어
