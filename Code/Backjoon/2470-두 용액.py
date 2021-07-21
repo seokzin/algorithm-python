@@ -1,5 +1,6 @@
 n = int(input())
 arr = list(map(int, input().split()))
+arr.sort() # 선 정렬!
 
 l, r = 0, n-1
 ans = [abs(arr[l]+arr[r]), (arr[l],arr[r])]
@@ -20,5 +21,5 @@ while l < r:
 
 print(*ans[1])
 
-# 다시 살펴보기
-# 2473 세 용액 묶어서 풀기
+# 투 포인터
+# 2467, 14921 같은 문제
