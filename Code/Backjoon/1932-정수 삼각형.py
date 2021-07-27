@@ -14,6 +14,6 @@ for i in range(1, n):
     else:
       dp[i][j] += max(dp[i-1][j-1], dp[i-1][j])
 
-print(max(dp[i]))
+print(max(dp[-1]))
 
 # 기본적인 dp 문제..
