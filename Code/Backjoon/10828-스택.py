@@ -1,11 +1,11 @@
 import sys
+input = sys.stdin.readline
 
 n = int(input())
-
 stack = []
 
 for i in range(n):
-  cmd = sys.stdin.readline().split() # map까지 쓸 필요가 없다.
+  cmd = input().split() # input을 가변 길이 '리스트'로 받음
 
   if cmd[0] == 'push':
     stack.append(cmd[1])
@@ -14,14 +14,18 @@ for i in range(n):
   elif cmd[0] == 'size':
     print(len(stack))
   elif cmd[0] == 'empty':
-    print(1 if not(stack) else 0)
-  else: # cmd == 'top'
+    print(1 if not stack else 0)
+  else: # cmd[0] == 'top'
     print(stack[-1] if stack else -1)
 
-# order -> cmd 명명 변경
-# input().split() 자체로도 문자열을 리스트화 해줌. 굳이 list(map.split()) 쓸 필요가 없다.
-# 시간초과 -> import sys
-# remove는 같은 숫자에서 임의의 값을 지울 수도 있음. del은 인덱스 지정
-# if len(stack) > 0 은 if stack로 대처 가능. not(stack)도 가능. list의 T F 조건 알아보기
-# pop(idx) - idx 요소 출력 및 삭제. 공백시 맨 뒤로 간주
-# insert와 append 성능 비교
+"""
+
+1. One-liner if statement 사용하여 코드 간결화
+
+2. 시간 복잡도 고려한 설계
+  pop(), append() = O(1)
+  remove(), insert() = O(N)
+
+3. input이 10000개 정도 되니 import sys가 필요하다.
+
+"""
