@@ -1,15 +1,17 @@
-n, m = map(int, input().split(' '))
+n, m = map(int, input().split())
 
-arr = list(map(int, input().split(' ')))
+cards = list(map(int, input().split()))
 
-result = 0
+res = 0
 
 for i in range(n):
   for j in range(i+1, n):
     for k in range(j+1, n):
-      if arr[i] + arr[j] + arr[k] <= m:
-        result = max(arr[i] + arr[j] + arr[k], result)
+      picks = cards[i] + cards[j] + cards[k]
 
-print(result)
+      if picks <= m:
+        res = max(picks, res)
 
-# 8-9) 완전탐색 3중 for문의 범위를 제대로 설정하자. 
+print(res)
+
+# 3중 for문 보자마자 순열이 생각났지만 모듈을 지양했음
