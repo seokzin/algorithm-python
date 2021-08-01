@@ -1,15 +1,15 @@
 while True:
-  a = list(map(int, input().split()))
-  max_a = max(a)
+  nums = list(map(int, input().split()))
+  
 
-  if sum(a) == 0:
+  if sum(nums) == 0:
     break
   
-  a.remove(max_a)
-  if a[0]**2 + a[1]**2 == max_a**2:
-    print('right')
-  else:
-    print('wrong')
+  num_max = max(nums)
+  nums.remove(num_max)
 
-# 이게 최선이였을까? 최대값을 pop하는 방법은 무엇?
-# a[0] + a[1] = 0 대신 sum(a)를 쓰는게 메모리적으로 바람직한가
+  print('right' if nums[0]**2 + nums[1]**2 == num_max**2 else 'wrong')
+
+# 정렬된 리스트란 가정하에 pop()을 썼다 -> 틀림
+# sort 한 뒤 pop()을 했다 -> 틀림. 예외가 있는듯
+# 결국 첫 방법인 remove로 했다. 심히 맘에 안든다
