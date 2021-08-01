@@ -1,8 +1,8 @@
-n = int(input())
+t = int(input())
 
-for i in range(n):
-  room = 000
-  h, w, n = map(int, input().split(' '))
+for _ in range(t):
+  h, w, n = map(int, input().split())
+
   if n % h == 0:
     print((h * 100) + (n // h))
   else:
