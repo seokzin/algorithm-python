@@ -7,20 +7,21 @@ def bfs():
   q.append(n)
 
   while q:
-    i = q.popleft()
+    x = q.popleft()
 
-    if i == k:
-      print(visit[i])
+    if x == k:
+      print(visit[x])
       return
 
-    for j in (i - 1, i + 1, i * 2):
-      if (0 <= j < LIMIT) and visit[j] == 0:
-        visit[j] = visit[i] + 1
-        q.append(j)
+    for nx in (x-1, x+1, x*2):
+      if 0 <= nx < LIMIT and not visit[nx]:
+        visit[nx] = visit[x]+1
+        q.append(nx)
 
 n, k = map(int, input().split())
 visit = [0] * LIMIT
 
 bfs()
 
-# 풀이마다 bfs의 인자가 0~3개 제각각이였다. 이를 비교해보면 좋을 듯
+# 가장 빠른 시간 - BFS
+# 풀고 다른 풀이들을 보니 다들 비슷하네요
