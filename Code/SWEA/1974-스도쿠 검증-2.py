@@ -21,3 +21,5 @@ for tc in range(1, int(input())+1):
             dp[i+1][j+1] = dp[i+1][j] + dp[i][j+1] - dp[i][j] + board[i][j]
 
     print(f'#{tc}', check())
+
+# 부분합을 통해 O(N) 풀이
