@@ -1,13 +1,29 @@
+def dfs(n, s):
+    global res
+
+    if n == N:
+        res = min(res, s)
+
+    if s > res:  # 불필요 연산 X -> 시간 초과 방지!!
+        return
+
+    for i in range(N):
+        if not visit[i]:
+            visit[i] = 1
+            dfs(n+1, s+arr[n][i])
+            visit[i] = 0
+
+
 for tc in range(1, int(input())+1):
     N = int(input())
-
     arr = [list(map(int, input().split())) for _ in range(N)]
-    dp = [[0]*(N+1) for _ in range(N)]
+    visit = [0] * N
+    res = 1000  # 최대로 초기화
 
-    for i in range(1, N):
-        dp[0][i] = min(dp[1][i-1], dp[2][i-1]) + arr[0][i]
-        dp[1][i] = min(dp[0][i-1], dp[2][i-1]) + arr[1][i]
-        dp[2][i] = min(dp[0][i-1], dp[1][i-1]) + arr[2][i]
+    dfs(0, 0)
+    print(f'#{tc}', res)
 
-    print(dp)
-# 완전 DP라 생각했습니다.
+
+# 모든 경우의 수로 무식하게 풀었으나 시간초과
+# 백트래킹이 답!
+# 심지어 7-8번 return 없어도 시간 초과. 고난도
