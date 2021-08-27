@@ -1,5 +1,3 @@
-
-
 for tc in range(1, int(input())+1):
     N, M, L = map(int, input().split())	
     arr = list(map(int, input().split()))
