@@ -43,3 +43,4 @@ for _ in range(int(input())): # T
         print("EMPTY")
 
 # sync를 최적화 할 수 있을 것 같아서.. 개선해보고 새로 올리겠습니다.
+# sync가 위에 있는 이유는. 삭제후 sync를 하면 맨 위에 더미가 있다고 장담할 수 없기 때문
