@@ -1,13 +1,5 @@
 from collections import deque
 
-n, m = map(int, input().split())
-arr = [*range(101)]  # 이런 방법도 가능
-visit = [0] * 101
-
-for _ in range(n+m) :
-    x, y = map(int, input().split())
-    arr[x] = y
-
 
 def bfs():
     q = deque()
@@ -24,6 +16,14 @@ def bfs():
                     visit[nx] = visit[x]+1
                     q.append(nx)
 
+
+n, m = map(int, input().split())
+arr = [*range(101)]  # 이런 방법도 가능
+visit = [0] * 101
+
+for _ in range(n+m) :
+    x, y = map(int, input().split())
+    arr[x] = y
 
 bfs()
 
