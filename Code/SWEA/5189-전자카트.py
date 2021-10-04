@@ -1,7 +1,7 @@
 def dfs(x, s, visit):
     global res
 
-    if s >= res:
+    if res < s:
         return
 
     if visit == (1<<n) - 1:
@@ -16,8 +16,7 @@ def dfs(x, s, visit):
 for tc in range(1, int(input())+1):
     n = int(input())
     arr = [list(map(int, input().split())) for _ in range(n)]
-    visit = [0] * n
-    res = 1000
+    res = float('inf')
 
     dfs(0, 0, 1)
     print(f"#{tc}", res)
