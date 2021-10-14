@@ -5,8 +5,14 @@ def find(x):
         return find(parent[x])
 
 
-def union(x,y):
-    parent[find(y)] = find(x)
+def union(x, y):
+    x = find(x)
+    y = find(y)
+
+    if x > y:
+        x, y = y, x
+
+    parent[y] = x
 
 
 for tc in range(1, int(input())+1):
