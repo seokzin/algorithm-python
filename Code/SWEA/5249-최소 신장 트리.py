@@ -1,19 +1,18 @@
-def union(a, b):  # 사이클 검토
-    a = find(a)
-    b = find(b)
-
-    if b < a:
-        parent[a] = b
+def find(x):
+    if x == parent[x]:
+        return x
     else:
-        parent[b] = a
+        return find(parent[x])
 
 
-def find(a):  # 간선들이 이은 두 정점 찾기
-    if a == parent[a]:
-        return a
+def union(x, y):
+    x = find(x)
+    y = find(y)
 
-    parent[a] = find(parent[a])  # 경로 압축
-    return parent[a]
+    if x > y:
+        x, y = y, x
+
+    parent[y] = x
 
 
 for tc in range(1, int(input())+1):
