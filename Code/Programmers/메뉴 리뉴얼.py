@@ -1,29 +1,24 @@
-def solution(new_id):
-    new_id = new_id.lower()  # 1단계
+from itertools import combinations
+from collections import Counter
 
-    res = ''  # 2단계
-    for x in new_id:
-        if x.isalnum() or x in '-_.':
-            res += x
 
-    while '..' in res:  # 3단계
-        res = res.replace('..', '.')  
+def solution(orders, course):
+    res = []
 
-    if res[0] == '.' and len(res) > 1:  # 4단계
-        res = res[1:]
-    if res[-1] == '.':
-        res = res[:-1]
+    for c in course:
+        cases = []
 
-    if not res:  # 5단계
-        res = 'a'
+        for order in orders:
+            cases += combinations(sorted(order), c)  # 정렬 필수
 
-    if len(res) >= 16:  # 6단계
-        res = res[:15]
+        counter = Counter(cases)
 
-        if res[-1] == '.':
-            res = res[:-1]
+        if counter and max(counter.values()) > 1:
+            for key, val in counter.items():
+                if val == max(counter.values()):
+                    res += [''.join(key)]
 
-    if len(res) <= 3:  # 7단계
-        res = res + res[-1] * (3-len(res))
+    return sorted(res)
 
-    return res
+# dict.values()는 view 타입을 리턴하여 max 연산을 못 씀.
+# counter가 value 순으로 정렬되어 있는데 for문으로 다루니까 섞임. 리팩토링 실패
